@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Design tokens
+   Light theme is the default. Dark theme is opt-in via [data-theme="dark"].
+   Palette: white / off-white / light grey with subtle saffron, India green
+   and navy accents.
+   ========================================================================== */
+
+:root {
+  /* Surfaces */
+  --bg: #f6f7f9;
+  --bg-alt: #eef1f5;
+  --surface: #ffffff;
+  --surface-muted: #f2f4f8;
+  --surface-subtle: #fafbfc;
+  --surface-user: #eef3fb;
+
+  /* Lines */
+  --border: #e4e8ee;
+  --border-strong: #d4dae3;
+  --border-focus: #1b3a6b;
+
+  /* Text */
+  --text: #131820;
+  --text-muted: #57616f;
+  --text-subtle: #8a93a2;
+  --text-inverse: #ffffff;
+
+  /* Accents */
+  --navy: #1b3a6b;
+  --navy-strong: #142e55;
+  --navy-soft: rgba(27, 58, 107, 0.08);
+  --navy-softer: rgba(27, 58, 107, 0.04);
+  --saffron: #dd8a2b;
+  --saffron-soft: rgba(221, 138, 43, 0.12);
+  --india-green: #0f7a4d;
+  --india-green-soft: rgba(15, 122, 77, 0.12);
+  --danger: #b42318;
+  --danger-soft: rgba(180, 35, 24, 0.08);
+  --warning: #a15c07;
+  --warning-soft: rgba(221, 138, 43, 0.14);
+
+  /* Logo specific */
+  --logo-bg: #ffffff;
+  --logo-border: #e2e6ec;
+  --logo-sheet: #f7f9fc;
+  --logo-band-white: #ffffff;
+
+  /* Watermark */
+  --watermark-color: #1b3a6b;
+  --watermark-opacity: 0.035;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(19, 24, 32, 0.05);
+  --shadow-sm: 0 1px 3px rgba(19, 24, 32, 0.06), 0 1px 2px rgba(19, 24, 32, 0.04);
+  --shadow-md: 0 6px 20px rgba(19, 24, 32, 0.07), 0 2px 6px rgba(19, 24, 32, 0.04);
+  --shadow-lg: 0 18px 44px rgba(19, 24, 32, 0.12);
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 9px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 999px;
+
+  /* Layout */
+  --sidebar-width: 286px;
+  --content-max: 820px;
+  --transition: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+[data-theme='dark'] {
+  --bg: #0e1116;
+  --bg-alt: #131820;
+  --surface: #161b23;
+  --surface-muted: #1c222c;
+  --surface-subtle: #12171e;
+  --surface-user: #1b2433;
+
+  --border: #262d38;
+  --border-strong: #333c4a;
+  --border-focus: #7ba6e6;
+
+  --text: #e8ebf1;
+  --text-muted: #a4aebd;
+  --text-subtle: #7c8695;
+
+  --navy: #8ab0ea;
+  --navy-strong: #a9c5f2;
+  --navy-soft: rgba(138, 176, 234, 0.12);
+  --navy-softer: rgba(138, 176, 234, 0.06);
+  --saffron: #e8a45c;
+  --saffron-soft: rgba(232, 164, 92, 0.16);
+  --india-green: #45c295;
+  --india-green-soft: rgba(69, 194, 149, 0.16);
+  --danger: #f08a80;
+  --danger-soft: rgba(240, 138, 128, 0.12);
+  --warning: #e8b871;
+  --warning-soft: rgba(232, 184, 113, 0.16);
+
+  --logo-bg: #161b23;
+  --logo-border: #2c3542;
+  --logo-sheet: #1b212b;
+  --logo-band-white: #e8ebf1;
+
+  --watermark-color: #8ab0ea;
+  --watermark-opacity: 0.05;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.5);
+}
